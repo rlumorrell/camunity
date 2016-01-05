@@ -1,0 +1,36 @@
+ {% extends 'base.html' %}
+ {% load crispy_forms_tags %}
+ {% load staticfiles %}
+
+ {% block styles %}
+ <style>
+body {
+  background: url('{% static "img/city.jpg" %}') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size:cover;
+  background-size: cover;
+}
+  </style>
+
+ {% endblock %}
+
+ {% block jumbotron %}
+    
+ <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>MVP landing</h1>
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p>
+      </div> 
+
+    {% endblock %}
+
+{% block content %}
+ <h1>hello</h1>
+ 
+
+ {% endblock %}
